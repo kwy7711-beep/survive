@@ -1,0 +1,6 @@
+{
+  "name": "간다 - 러브발싸: 무인도 표류기",
+  "description": "고수위 성인 로맨스 생존기 설정집",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

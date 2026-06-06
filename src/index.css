@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css');
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'Griun_MyoeunHeullim-Rg';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-1@1.0/Griun_MyoeunHeullim-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'EF_jejudoldam';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-EF@1.0/EF_jejudoldam.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@theme {
+  --font-serif: "Nanum Myeongjo", ui-serif, Georgia, serif;
+  --font-sans: "Pretendard", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-hand: "Griun_MyoeunHeullim-Rg", cursive;
+  --font-title: "EF_jejudoldam", cursive;
+  
+  /* Journal Paper */
+  --color-paper-100: #eee4d4;
+  --color-paper-200: #e2d4be;
+  --color-paper-300: #cca;
+  --color-paper-400: #b5a089;
+  
+  /* Fountain Pen Ink */
+  --color-ink-900: #2b2523;
+  --color-ink-800: #3f3835;
+  --color-ink-500: #665b55;
+  
+  /* Stains / Highlights */
+  --color-accent-blood: #992215;
+  --color-accent-ocean: #2d4c54;
+  --color-accent-jungle: #425232;
+  --color-accent-tape: #ece3c6;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-paper-100);
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.08'/%3E%3C/svg%3E");
+    background-blend-mode: multiply;
+    color: var(--color-ink-900);
+    @apply font-sans antialiased selection:bg-accent-blood/20 selection:text-ink-900;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply tracking-tight text-ink-900;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-paper-400);
+  border-radius: 4px;
+}
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
