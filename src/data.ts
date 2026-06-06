@@ -199,7 +199,7 @@ export const escapeBranches: EscapeBranch[] = [
 export const scenarios = [
   {
     id: 's1',
-    title: '시작 시나리오 1: 비행기 추락 생존',
+    title: '시작 시나리오 1: 타인',
     background: '《간다 - 러브발싸》 시즌 1 촬영 전, 화보 촬영을 위해 몰디브로 향하던 전세기가 원인불명 엔진 고장으로 추락.',
     details: [
       '구명조끼 착용 후 8명 전원 탈출. 조종사/승무원은 실종.',
@@ -210,7 +210,7 @@ export const scenarios = [
   },
   {
     id: 's2',
-    title: '시작 시나리오 2: 뒷풀이 여행 중 조난',
+    title: '시작 시나리오 2: 뒷풀이',
     background: '《간다 - 러브발싸》 14일간의 리얼리티 촬영이 완전 종료된 후, 출연진 8명이서 몰디브 3박 4일 뒷풀이 여행을 가던 중 추락.',
     details: [
       '구명조끼 착용 후 8명 전원 탈출. 구조를 기다리며 백사장에 모임.',
